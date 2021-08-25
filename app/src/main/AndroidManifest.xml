@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bms.jokenorrisio">
+    <!-- PERMISSÃO PARA O APP ACESSAR A INTERNET -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/chucknorris_logo_coloured_small"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.JokeNorrisIO">
+        <activity
+            android:name=".JokeActivity"
+            android:label="@string/title_activity_joke"
+            android:theme="@style/Theme.JokeNorrisIO.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.JokeNorrisIO.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!-- PAGINA QUE INICIARA O APP -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.JokeNorrisIO.NoActionBar"></activity>
+    </application>
+
+</manifest>
